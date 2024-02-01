@@ -1,4 +1,4 @@
-const filePath = 'jsonData.json';
+const filePath = 'carte_coree.json';
 
 fetch(filePath)
     .then(response => response.json())
