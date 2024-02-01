@@ -41,7 +41,8 @@ fetch(filePath)
         .on('mouseleave', mouseLeave);
         svg.selectAll('path').each(d => console.log(d));
             })
-            // Error of api
+            
+            // Catching API errors
     .catch(error => {
         console.error('Error loading the file:', error);
     });
