@@ -7,5 +7,5 @@ text.innerHTML = text.innerText.split('').map(
 
 // gestion du changement de page >> attendre 5 secondes
 setTimeout(function() {
-    window.location.href = "index.html";
+    window.location.href = "menu.html";
 }, 5000); 

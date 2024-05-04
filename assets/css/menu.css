@@ -1,0 +1,38 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.main-content {
+    background-color: #383838;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-title {
+    color: #FDFDFD;
+    text-align: center;
+    padding-top: 3.7rem;
+}
+
+#menu-help-icon{
+    font-size: 2rem;
+    margin-bottom: .9rem;
+}
+
+.menu-help-card {
+    margin: 2rem 0rem 0rem 5rem;
+    width: 185px;
+    height: 145px;
+    padding: 1.80rem;
+    border-radius: 30px;
+    background-color: #C6DBF0;
+}
+
+#menu-modal {
+    position: absolute;
+    top: 2.8rem;
+    right: 5rem;
+    color: #FDFDFD;
+    font-size: 2rem;
+}
