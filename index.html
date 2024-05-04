@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Carte de la Corée</title>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/landing-page.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5.18 - Gwangju Uprising</title>
 </head>
 <body>
+    <div class="main-content">
+        <!-- filtre pour le header -->
+        <div class="custom-filter"></div>
+        <!-- <div class="custom-filter-modal"></div> -->
+
+        <!-- Landing elements -->
+        <div class="element-shadow">
+            <div class="custom-filter-modal"></div>
+            <i class='bx bxs-info-circle' id="landing-modal"></i>
+            <div class="landing-modal-window">
+                <i class='bx bxs-x-circle' id="landing-modal-close"></i>
+                <h2 class="landing-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                <ul class="landing-modal-list">
+                    <li>Aurélie <strong>CHEA</strong></li>
+                    <li>Ensu <strong>YANG</strong></li>
+                    <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                    <li>Kévin <strong>HA</strong></li>
+                    <li>Léo <strong>PINSON</strong></li>
+                    <li>Audric <strong>CHAVINY</strong></li>
+                    <li>Quentin <strong>THERY</strong></li>
+                    <li>Hyunji <strong>KWAN</strong></li>
+                    <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                    <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                </ul>
+                <button class="landing-modal-button">Voir les coulisses</button>
+            </div>
+            <!-- Rich medias content -->
+            <div class="landing-content">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px">
+                <h1 class="main-title">
+                    5.18 <br/>Gwangju Uprising
+                </h1>
     
-    <script src="script.js"></script>
+                <p class="landing-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                </p>
+                
+                <button class="landing-button" onclick="window.location.href='transition.html'">
+                    Entrer
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Inté javascript -->
+    <script src="assets/js/landingModal.js"></script>
 </body>
 </html>
