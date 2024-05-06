@@ -1,6 +1,7 @@
 // récupération des éléments js 
 let infoBtn = document.getElementById("menu-modal");
 let closeBtn = document.getElementById("menu-modal-close");
+let menuElements = document.querySelectorAll("point");
 
 // ouvrir la modale
 infoBtn.addEventListener("click", (e) => {
@@ -15,3 +16,5 @@ closeBtn.addEventListener("click", (e)=> {
     document.querySelector(".landing-modal-window").style.display = "none";
     document.querySelector(".custom-filter-modal").style.display = "none";
 })
+
+// animation hover des éléments de menu
