@@ -1,0 +1,15 @@
+/* text content element */
+.page-title {
+    color: #8B1202;
+    text-transform: uppercase ;
+}
+
+.page-title-description {
+    color: #030303;
+}
+
+/* Gestion de l'emplacement */
+.main-title-page {
+    width: 80vw;
+    padding: 5rem 20rem;
+}
