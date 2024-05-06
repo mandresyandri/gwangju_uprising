@@ -19,17 +19,63 @@
 <body>
     <div class="main-content">
         <h1 class="menu-title">Menu principal</h1>
-        <i class='bx bxs-info-circle' id="menu-modal"></i>
+        <!-- Affichage de la modale => reprise des éléments du menu -->
+        <div class="custom-filter-modal"></div>
+            <i class='bx bxs-info-circle' id="menu-modal"></i>
+            <div class="landing-modal-window">
+                <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                <ul class="menu-modal-list">
+                    <li>Aurélie <strong>CHEA</strong></li>
+                    <li>Ensu <strong>YANG</strong></li>
+                    <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                    <li>Kévin <strong>HA</strong></li>
+                    <li>Léo <strong>PINSON</strong></li>
+                    <li>Audric <strong>CHAVINY</strong></li>
+                    <li>Quentin <strong>THERY</strong></li>
+                    <li>Hyunji <strong>KWAN</strong></li>
+                    <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                    <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                </ul>
+                <button class="menu-modal-button">Voir les coulisses</button>
+            </div>
         <!-- Carte d'aide -->
         <div class="menu-help-card">
             <i class='bx bxs-help-circle' id="menu-help-icon"></i>
             <p class="menu-help-card-text">
-                Sélectionner une image pour être redirigé vers la section correspondante et découvrir l'histoire qui se cache derrière.
+                Sélectionnez une image pour être redirigé vers la section correspondante et découvrir l'histoire qui se cache derrière.
             </p>
-            <div class="menu-element">
-                <img src="assets/img/menu-animation.png">
+        </div>
+        <div class="menu-element">
+            <div class="base-circle">
+                <div class="point top">
+                    <img src="assets/img/menu-button-1.png">
+                </div>
+                <div class="point right">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <div class="point bottom">
+                    <img src="assets/img/menu-button-1.png">
+                </div>
+                <div class="point left">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <div class="point top-right">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <div class="point top-left">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <div class="point bottom-right">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <div class="point bottom-left">
+                    <img src="assets/img/menu-button-2.png">
+                </div>
+                <img src="assets/img/menu-animation.gif" width="317px" height="317px">
             </div>
         </div>
     </div>
+    <script src="assets/js/menuModal.js"></script>
 </body>
 </html>
