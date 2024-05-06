@@ -181,10 +181,7 @@
     transform: scale(1.10);
 }
 
-.blur-effect {
-    filter: blur(5px);
-}
-
+/* gestion du menu */
 .point img:hover {
     transform: scale(1.2);
 }
@@ -202,4 +199,10 @@
 
 .point:hover .img-title {
     opacity: 1;
+}
+
+/* effet de blur pour l'affichage */
+.blur-effect img {
+    filter: blur(5px);
+    backdrop-filter: sepia(1) hue-rotate(180deg) saturate(2) brightness(0.8);
 }

@@ -1,7 +1,7 @@
 // récupération des éléments js 
 let infoBtn = document.getElementById("menu-modal");
 let closeBtn = document.getElementById("menu-modal-close");
-let menuElements = document.querySelectorAll("point");
+const points = document.querySelectorAll('.point');
 
 // ouvrir la modale
 infoBtn.addEventListener("click", (e) => {
@@ -18,3 +18,13 @@ closeBtn.addEventListener("click", (e)=> {
 })
 
 // animation hover des éléments de menu
+points.forEach(point => {
+    point.addEventListener('mouseover', () => {
+        points.forEach(p => p.classList.add('blur-effect'));
+        point.classList.remove('blur-effect');
+    });
+
+    point.addEventListener('mouseout', () => {
+        points.forEach(p => p.classList.remove('blur-effect'));
+    });
+});
