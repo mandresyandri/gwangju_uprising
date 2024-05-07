@@ -6,10 +6,54 @@
 
 .page-title-description {
     color: #030303;
+    font-weight: lighter;
+    font-size: 1.1rem;
 }
 
 /* Gestion de l'emplacement */
 .main-title-page {
-    width: 80vw;
-    padding: 5rem 20rem;
+    width: 79vw;
+    padding: 5rem 0rem 0rem 15rem;
+}
+
+.first-box-content {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-left: 15rem;
+    margin-top: 4.5rem;
+
+    /* inside the box */
+    padding: 2rem;
+}
+
+.img-support-box {
+    position: absolute;
+    top: 16rem;
+    right: 17rem;
+    width: 290px;
+    height: 250px;
+    background-color: #fff;
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.30);
+}
+
+.description-box {
+    padding-right: 20rem;
+    line-height: 1.5;
+}
+
+.video-integration {
+    margin-top: 2rem;
+}
+
+.video-integration iframe {
+    margin-left: 15rem;
+    width: 1050px;
+    /* height: 632px; */
+    height: 590px;
+    border: none;
+    border-radius: 50px;
 }
