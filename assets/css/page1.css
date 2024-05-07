@@ -19,10 +19,11 @@
 .first-box-content {
     display: flex;
     flex-direction: row;
-    width: 65vw;
+    width: 63vw;
     background-color: #D9D9D9;
     border-radius: 20px;
     margin-left: 15rem;
+    margin-right: 15rem;
     margin-top: 4.5rem;
 
     /* inside the box */
@@ -34,10 +35,13 @@
     top: 16rem;
     right: 17rem;
     width: 290px;
-    height: 250px;
+    height: 270px;
     background-color: #fff;
     transform: rotate(-3deg);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .description-box {
@@ -46,14 +50,80 @@
 }
 
 .video-integration {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .video-integration iframe {
-    margin-left: 15rem;
-    width: 1050px;
-    /* height: 632px; */
-    height: 590px;
+    margin-left: 15.3rem;
+    box-sizing: border-box;
+    /* width: calc(65.625rem*1); 
+    height: calc(36.875rem*1); */
+    width: 1024px;
+    height: 576px;
+    border-radius: 20px;
     border: none;
-    border-radius: 50px;
+}
+
+.img-half-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.img-content {
+    width: 50%;
+    height: 550px;
+}
+
+.text-content {
+    margin: 0;
+    background-color: #D9D9D9;
+    width: 50%;
+    height: 550px;
+}
+
+.text-content > * {
+    padding: 0 5rem 0 5rem; 
+    text-align: justify;
+}
+
+.text-content > h2 {
+    padding-top: 2rem;
+}
+
+.page-more-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15rem;
+    background-color: #FDFDFD;
+    width: 60vw;
+    padding: 3rem;
+    border-radius: 30px;
+}
+
+.title-box {
+    text-transform: uppercase;
+}
+
+.page-content-button {
+    text-transform: uppercase;
+    background-color: #C6DBF0;
+    color: #030303;
+    border: none;
+    width: 186px;
+    padding: .9rem;
+    border-radius: 20px;
+    margin-left: auto;
+    display: block;
+    margin-top: 1.4rem;
+}
+
+.img-support-box > img {
+    height: 200px;
+    padding: .7rem .7rem 0 .7rem;
+}
+
+.img-description {
+    padding-top: .9rem;
 }
