@@ -12,8 +12,10 @@
 
 /* Gestion de l'emplacement */
 .main-title-page {
-    width: 79vw;
-    padding: 5rem 0rem 0rem 15rem;
+    width: 67vw;
+    padding: 5rem 0rem 0rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .first-box-content {
@@ -22,18 +24,22 @@
     width: 63vw;
     background-color: #D9D9D9;
     border-radius: 20px;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-right: 9rem;
     margin-top: 4.5rem;
+    height: 230px; /* s'adapte à la hauteur du contenu */
+
+    /* position */
+    margin-left: auto;
+    margin-right: auto;
 
     /* inside the box */
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .img-support-box {
-    position: absolute;
-    top: 16rem;
-    right: 17rem;
+    position: relative;
+    top: -5rem;
+    right: 3rem;
     width: 290px;
     height: 270px;
     background-color: #fff;
@@ -42,22 +48,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 1; /* permet à l'élément de réduire sa taille */
 }
-
 .description-box {
-    padding-right: 20rem;
+    padding-right: 7rem;
     line-height: 1.5;
+    text-align: justify;
+    margin:0;
 }
 
 .video-integration {
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .video-integration iframe {
-    margin-left: 15.3rem;
     box-sizing: border-box;
-    /* width: calc(65.625rem*1); 
-    height: calc(36.875rem*1); */
     width: 1024px;
     height: 576px;
     border-radius: 20px;
@@ -95,11 +104,13 @@
 .page-more-content {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 15rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #FDFDFD;
     width: 60vw;
     padding: 3rem;
     border-radius: 30px;
+    display: block;
 }
 
 .title-box {
@@ -121,7 +132,7 @@
 
 .img-support-box > img {
     height: 200px;
-    padding: .7rem .7rem 0 .7rem;
+    padding: .7rem .7rem 0rem .7rem;
 }
 
 .img-description {
