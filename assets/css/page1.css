@@ -88,14 +88,17 @@ body {
 
 .img-content {
     width: 50%;
-    height: 550px;
+    height: 680px;
 }
 
 .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     background-color: #D9D9D9;
     width: 50%;
-    height: 550px;
+    height: 680px;
 }
 
 .text-content > * {
