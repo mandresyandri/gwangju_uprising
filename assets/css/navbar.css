@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #EBEBEB;
+    font-family: "Onest", sans-serif;
 }
 
 /* gestion de la navbar */
@@ -57,12 +60,12 @@ body {
     z-index: 4;
     top: 0;
     right: 5rem;
-    padding: 3rem 1rem 0rem 1rem;
+    padding: 5rem 5rem 2rem 1rem;
     font-size: 1rem;
 
     /* elements de la box */
-    height: 400px;
-    width: 330px;
+    height: auto;
+    width: 275px;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
 
