@@ -47,6 +47,18 @@ body {
     margin-right: 1.5rem;
 }
 
+.nav-button-galerie {
+    width: 168px; 
+    height: 45px;
+    background-color: transparent;
+    color: #030303; 
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    padding: .9rem;
+    margin-right: 1.5rem;
+}
+
 .right-side {
     font-size: 2rem;
 }
