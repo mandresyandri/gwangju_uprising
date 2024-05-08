@@ -15,3 +15,4 @@ closeBtn.addEventListener("click", (e)=> {
     document.querySelector(".landing-modal-window").style.display = "none";
     document.querySelector(".custom-filter-modal").style.display = "none";
 })
+

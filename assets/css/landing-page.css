@@ -10,6 +10,12 @@ body {
     padding :0;
 }
 
+.langue-change {
+    position: absolute;
+    padding: 1.8rem;
+    top: .3rem;
+    right: 3rem;
+}
 
 /* faire l'image de font après */
 .main-content {
@@ -160,4 +166,20 @@ button.landing-button {
 
 .blur-effect-no {
     filter: blur(0px);
+}
+
+/* CSS */
+.display-name div {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.display-name div.selected {
+    background-color: #ddd;
+}
+
+.display-name {
+    padding: .3rem;
 }
