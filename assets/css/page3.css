@@ -1,0 +1,9 @@
+.img-content-full {
+    height: 550px;
+    width: 100%;
+}
+
+.img-description{
+    align-self: flex-start;
+    padding: .4rem .9rem;
+}

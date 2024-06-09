@@ -5,3 +5,10 @@ body{
 .hero-title {
     padding: 50px 300px 0px 300px;
 }
+
+.quote-carousel {
+    height: 200px;
+    margin-top: 3rem;
+    background-color: #C6DBF0;
+    display: flex;
+}
