@@ -1,0 +1,73 @@
+.carousel-text {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 250px;
+    background-color: #C6DBF0; 
+    margin-top: 3rem;
+    font-family: "Onest", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-slide {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+.carousel-slide.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    width: 80%;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.carousel-slide h1 {
+    /* width: 80%; */
+    padding: 20px 0px;
+    font-size: 1.2em;
+}
+.carousel-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.carousel-navigation button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.quote-left {
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+.quote-right {
+    position: absolute;
+    right: -10px;
+    bottom: 0px;
+    transform: rotate(180deg)
+}
