@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/page1.css">
+    <link rel="stylesheet" href="../assets/css/galerie.css">
+    <link rel="icon" href="../assets/img/logo.png">
+
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Gwangju Uprising</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="../assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button" onclick="window.location.href='transition.html'">Menu principal</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                    <ul class="menu-modal-list">
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Kévin <strong>HA</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Audric <strong>CHAVINY</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                    </ul>
+                    <button class="menu-modal-button">See behind the scenes</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">Galeries photos</h1>
+            <h2 class="page-title-description">Retour sur les images qui ont marqué Gwangju</h2>
+        </div>
+        <div class="galerie-content">
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-1.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-2.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-3.JPG">
+            </div>
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-4.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-5.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-6.JPG">
+            </div>
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-7.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-8.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-9.JPG">
+            </div>
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-10.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-11.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-12.JPG">
+            </div>
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-13.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-14.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-15.JPG">
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/menu.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
