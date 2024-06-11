@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/page1.css">
+    <link rel="stylesheet" href="assets/css/page2.css">
+    <link rel="stylesheet" href="assets/css/page3.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Le soulèvement de Gwangju</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button>
+                <button class="nav-button" onclick="window.location.href='transition.html'">Menu principal</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVINY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kévin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                    </ul>
+                    <button class="menu-modal-button">Voir les coulisses</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">La déconstruction d’un mythe</h1>
+            <h2 class="page-title-description">Témoignages et devoir de mémoire du soulèvement de Gwangju</h2>
+        </div>
+        <div class="first-box-content">
+            <div class="text-box-content">
+                <h2 class="title-box">À noter</h2>
+                <p class="description-box">
+                    Le soulèvement de Gwangju est un événement historique significatif dans la lutte pour la démocratie en Corée du Sud. Le film "A Taxi Driver", devenu une porte d’entrée pour en apprendre plus, a joué un rôle important en popularisant cette histoire auprès du grand public, notamment les jeunes générations qui connaissaient peu ce conflit. Le film met en lumière la présence et le rôle du journaliste allemand Jürgen Hinzpeter, mais il véhicule aussi une mystification de sa présence, donnant l'impression qu'il était le seul journaliste étranger à couvrir les événements. 
+                </p>
+            </div>
+            <div class="img-support-box">
+                <img src="assets/img/a_taxi_driver.jpg">
+                <div class="img-description">영화 "택시운전사" 포스터<br>Affiche du film "A Taxi Driver"</div>
+            </div>
+        </div>
+        <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe width="960" height="540" src="https://player.vimeo.com/video/942244324?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+            </iframe>
+        </div>
+
+        <!-- contenu historique -->
+         <div class="carousel-text">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>Qui est Hinzpeter ?</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>Ils [les soldats] nous avaient demandé de nous rendre à un hôtel et de ne pas en sortir. Nous n’y sommes jamais allés.</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>Nous nous étions mis sur le toit de l’immeuble juste en face de la mairie. J’ai dit à Lochon que ce serait là qu’auront lieu les combats.</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <button id="prevBtn">&lt;</button>
+                    <button id="nextBtn">&gt;</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="quote-carousel">
+            <img src="assets/img/quote-page-2.svg">
+            <h1 class="page-title">mettre une citation d’une des personnes interviewées.</h1>
+            <img src="assets/img/quote-page-2.svg">     
+        </div> -->
+
+        <!-- Aller plus loin -->
+        <div class="page-more-content">
+            <h2 class="page-content-title">Jürgen Hinzpeter, seul journaliste étranger présent sur place ? </h2>
+            <p class="page-text-content">
+                <span style="font-style: italic;">“Qui est Hinzpeter ?”</span>
+                <br><br>
+                Ce fut la réaction qu’eut le photographe français Patrick Chauvel, questionné sur la présence d’autres étrangers lors du soulèvement.
+                <br><br>
+                Contrairement à l'idée véhiculée par le film, Hinzpeter n'était pas le seul étranger présent à Gwangju. En réalité, au moins deux photographes français, Patrick Chauvel et François Lochon, étaient sur place. Ces photographes ont joué un rôle important en documentant les événements et en apportant des preuves visuelles de la brutalité des répressions.
+                Chauvel explique : “Ils [les soldats] nous avaient demandé de nous rendre à un hôtel et de ne pas en sortir. Nous n’y sommes jamais allés.”
+                <br><br>
+                <span style="font-style: italic;">“Nous nous étions mis sur le toit de l’immeuble juste en face de la mairie. J’ai dit à Lochon que ce serait là qu’auront lieu les combats.”</span>               
+                <br><br>
+                Patrick Chauvel et François Lochon ont capturé des images poignantes du soulèvement.
+                Leur travail est particulièrement précieux car il offre une perspective différente de celle de Hinzpeter. Leurs photos sont des témoignages visuels puissants de la violence et du courage des citoyens de Gwangju.
+
+            <!-- <p class="page-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            </p>
+             -->
+            <button class="page-content-button">Prochaine section</button>
+        </div>
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
+   
+
+

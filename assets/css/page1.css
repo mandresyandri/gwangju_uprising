@@ -56,6 +56,7 @@ body {
     align-items: center;
     flex-shrink: 1; /* permet à l'élément de réduire sa taille */
 }
+
 .description-box {
     padding-right: 7rem;
     line-height: 1.5;
@@ -137,7 +138,7 @@ body {
 }
 
 .img-support-box > img {
-    height: 200px;
+    height: 180px;
     padding: .7rem .7rem 0rem .7rem;
 }
 
