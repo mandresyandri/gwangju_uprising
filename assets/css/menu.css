@@ -210,7 +210,7 @@ body {
 
 /* effet de blur pour l'affichage */
 .blur-effect img {
-    filter: blur(.1px);
+    filter: blur(2px);
     backdrop-filter: hue-rotate(180deg) saturate(2) brightness(0.8);
     border-radius: 50%;
 }

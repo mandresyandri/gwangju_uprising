@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/page1.css">
+    <link rel="stylesheet" href="assets/css/historique.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Le soulèvement de Gwangju</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">Voir les coulisses</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">Historique des évènements</h1>
+            <h2 class="page-title-description">Retour sur les moments clés qui ont maqués le soulèvement de Gwangju</h2>
+        </div>
+        <div class="carousel">
+            <div class="carousel-events">
+                <div class="event active">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">01</h1>
+                    <img src="assets/img/historical-elements.png" alt="Image 1" class="carousel-image active">
+                    <h2 class="event-title">Title event 1</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">02</h1>
+                    <img src="assets/img/a_taxi_driver.jpg" alt="Image 2" class="carousel-image">
+                    <h2 class="event-title">Title event 2</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="assets/img/galerie-1.JPG" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Title event 3</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="assets/img/galerie-1.JPG" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Title event 3</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="assets/img/galerie-1.JPG" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Title event 3</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="assets/img/galerie-1.JPG" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Title event 3</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">18 mai 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="assets/img/galerie-1.JPG" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Title event 3</h2>
+                    <p class="event-description">Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+                </div>
+            </div>
+            <button class="carousel-button prev">Précédent</button>
+            <button class="carousel-button next">Suivant</button>
+        </div>
+        <div class="descriptions">
+            <div class="description active">Description de l'image 1</div>
+            <div class="description">Description de l'image 2</div>
+            <div class="description">Description de l'image 3</div>
+        </div>
+
+
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/historique.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
