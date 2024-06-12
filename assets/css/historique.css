@@ -6,13 +6,23 @@ body {
 .carousel {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 650px;
     /* background-color: salmon; */
     padding: 50px 0px;
     overflow: hidden;
     /* height: 200px; */
     /* overflow: hidden; */
     /* margin: auto; */
+}
+
+.carousel::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #C6DBF0;
 }
 
 .carousel-events {
@@ -98,4 +108,31 @@ body {
 
 .description.active {
     display: block;
+}
+
+
+.events-progress {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-progress-bar {
+    display: block;
+    height: 5px;
+
+    background-color: red;
+    z-index: 1;
+}
+
+.events-progress ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.events-progress li {
+    display: inline;
 }
