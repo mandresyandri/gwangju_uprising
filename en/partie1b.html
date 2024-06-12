@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/page1.css">
+    <link rel="stylesheet" href="assets/css/page2.css">
+    <link rel="stylesheet" href="assets/css/page3.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Gwangju Uprising</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Gallery</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">This web documentary was created by</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">See behind the scenes</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">Patrick Chauvel, a Key Witness</h1>
+            <h2 class="page-title-description">Testimonies and the Duty of Remembrance of the Gwangju Uprising</h2>
+        </div>
+        <div class="first-box-content">
+            <div class="text-box-content">
+                <h2 class="title-box">Note</h2>
+                <p class="description-box">
+                    Patrick Chauvel, a renowned war photographer, has covered numerous conflicts around the world, including the Vietnam War and the Lebanese Civil War. His presence in Gwangju in 1980 was motivated by his commitment to document the truth and witness injustices. His photographs of the Gwangju Uprising are among the most striking and revealing of that period. His photos not only documented the brutality of the repression but also helped draw international attention to the situation in South Korea.                
+                </p>
+            </div>
+            <div class="img-support-box">
+                <img src="assets/img/patrick-chauvel.jpg">
+                <div class="img-description">패트릭 쇼벨의 사진<br>Photo of Patrick Chauvel</div>
+            </div>
+        </div>
+        <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe width="960" height="540" src="https://player.vimeo.com/video/942244324?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+            </iframe>
+        </div>
+
+        <!-- contenu historique -->
+         <div class="carousel-text">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>Who is Hinzpeter ?</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>They [the soldiers] had asked us to go to a hotel and not leave. We never went there.</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="quote-container">
+                        <img class="quote-left" src="assets/img/quote-page-2.svg" alt="">
+                        <h1>We positioned ourselves on the roof of the building right across from the city hall. I told Lochon that this is where the fighting would take place.</h1>
+                        <img class="quote-right" src="assets/img/quote-page-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <button id="prevBtn">&lt;</button>
+                    <button id="nextBtn">&gt;</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="quote-carousel">
+            <img src="assets/img/quote-page-2.svg">
+            <h1 class="page-title">mettre une citation d’une des personnes interviewées.</h1>
+            <img src="assets/img/quote-page-2.svg">     
+        </div> -->
+
+        <!-- Aller plus loin -->
+        <div class="page-more-content">
+            <h2 class="page-content-title">Censorship and the importance of images</h2>
+            <p class="page-text-content">
+                The Gwangju Uprising was subjected to intense censorship, making it difficult to disseminate information and images. However, the work of foreign photographers played a crucial role in restoring the facts. Once shared, the images helped make censorship less effective and spread the truth about the events.
+            </p>
+            <h2 class="page-content-title">François Lochon: another perspective</h2>
+            <p class="page-text-content">
+                François Lochon, like Chauvel, is a war photographer who has covered several international conflicts. His presence in Gwangju and his photographic work also provided essential visual evidence of the tragic events of May 1980.            
+            </p>
+            <h2 class="page-content-title">Conclusion</h2>
+            <p class="page-text-content">
+                By deconstructing the myth of Hinzpeter, we discover the importance of multiple perspectives and the contributions of different journalists and photographers. The photographs of Chauvel and Lochon are essential visual testimonies that complement and enrich our understanding of the Gwangju Uprising. Their work reminds us that historical truth is often multi-faceted and that each perspective adds another piece to the puzzle of our collective memory.
+                In May 2023, the French photographers were invited to Gwangju to help South Koreans reconstruct their history. This initiative underscores the continuing importance of their contributions and their role in restoring historical truth.
+            </p>
+            
+
+            <!-- <p class="page-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            </p>
+             -->
+            <button class="page-content-button">Next section</button>
+        </div>
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
+   
+
+
