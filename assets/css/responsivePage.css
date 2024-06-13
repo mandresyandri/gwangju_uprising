@@ -1,0 +1,108 @@
+@media (max-width: 1366px) {
+    .first-box-content{
+        width: 80vw;
+    }
+    .main-title-page{
+        margin-left: 8%;
+    }
+    .img-support-box{
+        top:-2rem;
+    }
+    .page-more-content{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1024px){
+    .first-box-content{
+        width: 100vw;
+        border-radius: 0;
+        padding-right: 0;
+    }
+    .text-box-content{
+        width: 65%;
+    }
+    .main-title-page{
+        margin-left: 3%;
+    }
+    .img-support-box{
+        top: -1rem;
+        right: 0rem;
+    }
+    .description-box{
+        padding-right: 3rem;
+    }
+    .page-more-content{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .page-content-title{
+        width: 90%;
+    }
+    .page-text-content{
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 420px) {
+
+    body{
+        font-size: 12px;
+    }
+    .navbar{
+        padding: 0rem 0rem 1rem 1rem;
+    }
+    .navbar > .left-side{
+        justify-content: center;
+    }
+    .navbar > .left-side > .nav-logo-text{
+        width: 30%;
+    }
+    .navbar > .right-side{
+        display: none;
+    }
+
+    .burger-menu-btn, .burger-menu-overlay{
+        display: block;
+    }
+
+    .main-title-page{
+        width: 100vw;
+        padding-top: 2rem;
+    }
+    .first-box-content{
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .text-box-content{
+        width: 95%;
+    }
+    .img-support-box{
+        top: 1rem
+    }
+
+    .video-integration{
+        margin-top: -7rem;
+        margin-bottom: -10rem;
+    }
+
+    .carousel-text {
+        padding: 20px 0px;
+        font-size: 0.5em;
+    }
+
+    .quote-right, .quote-left{
+        width: 10%;
+    }
+
+    .page-more-content{
+        padding: 0.5rem;
+    }
+    
+    .page-text-content{
+        width: 95%;
+
+    }
+}

@@ -2,6 +2,7 @@
 
 body {
     font-family: "Onest", sans-serif;
+    overflow-x: hidden;
 }
 
 /* text content element */
@@ -32,8 +33,6 @@ body {
     border-radius: 20px;
     margin-right: 9rem;
     margin-top: 4.5rem;
-    height: 230px; /* s'adapte à la hauteur du contenu */
-
     /* position */
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +61,7 @@ body {
     line-height: 1.5;
     text-align: justify;
     margin:0;
+    margin-bottom: 1rem;
 }
 
 .video-integration {

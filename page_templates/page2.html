@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/page1.css">
     <link rel="stylesheet" href="assets/css/page2.css">
     <link rel="stylesheet" href="assets/css/page3.css">
+    <link rel="stylesheet" href="assets/css/responsivePage.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="icon" href="assets/img/logo.png">
 
@@ -28,6 +29,24 @@
                 <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
                 <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
             </div>
+
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="assets/js/burger.js"></script>
 
             <!-- Partie droite -->
             <div class="right-side">
