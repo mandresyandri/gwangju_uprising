@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #EBEBEB;
     font-family: "Onest", sans-serif;
+    overflow-x: hidden;
 }
 
 /* gestion de la navbar */

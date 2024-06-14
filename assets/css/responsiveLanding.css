@@ -45,4 +45,7 @@
     .landing-modal-button{
         width:13rem;
     }
+    .custom-filter{
+        height: 100vh;
+    }
 }
