@@ -1,0 +1,48 @@
+@media (max-width: 1366px){
+    p.landing-text {
+        font-size: 14px;
+    }
+    h1.main-title {
+        font-size: 20px; 
+    }
+    button.landing-button {
+        width: 125px;
+        height: 125px;
+    }
+}
+@media (max-width: 1024px){
+    p.landing-text {
+        font-size: 14px;
+    }
+    h1.main-title {
+        font-size: 20px; 
+    }
+    button.landing-button {
+        width: 100px;
+        height: 100px;
+    }
+    .landing-modal-window{
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px){
+    p.landing-text {
+        font-size: 11px;
+    }
+    h1.main-title {
+        font-size: 15px; 
+    }
+    button.landing-button {
+        width: 75px;
+        height: 75px;
+    }
+    .landing-content{
+        height: 60%;
+    }
+    .landing-modal-window{
+        width: 175px;
+    }
+    .landing-modal-button{
+        width:13rem;
+    }
+}
