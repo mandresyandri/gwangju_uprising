@@ -52,7 +52,7 @@ body {
 }
 
 .nav-button-galerie {
-    width: 168px; 
+    /* width: 168px;  */
     cursor: pointer;
     height: 45px;
     background-color: transparent;

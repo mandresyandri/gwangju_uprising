@@ -74,14 +74,16 @@ body {
 
 h1.main-title {
     text-align: center;
-    font-size: 22px; 
+    /* font-size: 22px;  */
+    font-size: 2vw; 
 }
 
 p.landing-text {
-    width: 50%;
+    width: 40%;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    /* width: 603px; */
 }
 
 button.landing-button {
@@ -184,4 +186,15 @@ button.landing-button {
 
 .display-name {
     padding: .3rem;
+    border-radius: 10px;
+
+}
+
+.landing-button-container {
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+    display: flex;
+    align-items: center;
+
 }
