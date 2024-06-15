@@ -46,7 +46,7 @@
         padding: 40px 0;
     }
     .carousel-events {
-        transform: scale(1.1) !important;
+        transform: scale(.9) !important;
         padding-left: 7%;
     }
     .carousel-button {
@@ -59,7 +59,7 @@
         padding: 10px 0;
     }
     .carousel-events {
-        transform: scale(.9) !important;
+        transform: scale(.8) !important;
         padding-left: 0%;
     }
     .carousel-button {
