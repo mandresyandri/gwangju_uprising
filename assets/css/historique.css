@@ -99,6 +99,7 @@ h1, h2 {
 .event-description {
     margin: 0;
     font-size: .9rem;
+    text-align: justify;
 }
 
 .carousel-image {
@@ -140,7 +141,7 @@ h1, h2 {
 
 .descriptions {
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .description {
@@ -149,7 +150,6 @@ h1, h2 {
 
 .description.active {
     display: flex;
-
 }
 
 .description-left {
@@ -165,7 +165,7 @@ h1, h2 {
     right: 0;
     top: 0;
     width: 2px;
-    height: 90%;
+    height: 95%;
     border-radius: 5px;
     background-color: #D8D8D8;
 }
@@ -192,6 +192,37 @@ h1, h2 {
     height: auto;
     /* height: 300px;
     width: auto; */
+}
+
+.description-left-box2 {
+    position: relative;
+    right: 10%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+    line-height: 1.7rem;
+}
+
+.description-left-box2 h1 {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.description-left-box2 p {
+    text-align: justify;
+}
+
+.description-left-box2 > img {
+    position: absolute;
+    right: 85%;
+}
+
+.description-left-box2 div img {
+    position: absolute;
+    left: 0;
+    opacity: .9;
 }
 
 
@@ -287,4 +318,13 @@ h1, h2 {
     .events-progress ul li {
         display: none;
     }
+
+    .description.active {
+        flex-direction: column;
+    }
+
+    .description-left, .description-right, .description-left-box-1 {
+        width: 100%;
+    }
+
 }
