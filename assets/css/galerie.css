@@ -1,3 +1,20 @@
+ /* Sous-lignage du bouton du menu */
+ .right-side button:nth-of-type(2) {
+    position: relative; 
+}
+
+.right-side button:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    bottom: 8px; 
+    left: 50%;
+    transform: translate(-50%);
+    width: 75%;
+    height: 1px;
+    background-color: #222;
+    display: block; 
+}
+
 .galerie-content {
     display: grid;
     width: 63vw;

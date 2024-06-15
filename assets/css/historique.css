@@ -26,6 +26,23 @@ h1, h2 {
     font-family: "Onest", sans-serif;
 }
 
+ /* Sous-lignage du bouton du menu */
+.right-side button:nth-of-type(1) {
+    position: relative; 
+}
+
+.right-side button:nth-of-type(1)::after {
+    content: '';
+    position: absolute;
+    bottom: 8px; 
+    left: 50%;
+    transform: translate(-50%);
+    width: 87%;
+    height: 1px;
+    background-color: #222;
+    display: block; 
+}
+
 .carousel {
     position: relative;
     width: 100%;
