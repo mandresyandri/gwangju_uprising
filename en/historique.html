@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/page1.css">
+    <link rel="stylesheet" href="../assets/css/historique.css">
+    <link rel="icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../assets/css/responsivePage.css">
+    <link rel="stylesheet" href="../assets/css/responsivePhoto.css">
+    <link rel="stylesheet" href="../assets/css/responsiveHistorique.css">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 Gwangju Uprising</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="../assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='coulisses.html'">See behind the scenes</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="../assets/js/burger.js"></script>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button>
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">This web documentary was created by</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">See behind the scenes</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">History of Events</h1>
+            <h2 class="page-title-description">A Look Back at the Key Moments of the Gwangju Uprising</h2>
+        </div>
+        <div class="carousel">
+            <div class="carousel-events">
+                <div class="event active">
+                    <p class="event-date">The Beginnings</p>
+                    <h1 class="event-number">01</h1>
+                    <img src="../assets/img/historical-elements.png" alt="Image 1" class="carousel-image active">
+                    <h2 class="event-title">The Beginnings</h2>
+                    <p class="event-description">Since 1961, South Korea had been under the dictatorship of Park Chung-hee, marked by repression and the suppression of civil liberties. In 1979, Park was assassinated, creating political instability.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 18 1980</p>
+                    <h1 class="event-number">02</h1>
+                    <img src="../assets/img/historique2.png" alt="Image 2" class="carousel-image">
+                    <h2 class="event-title">Start of the Uprising</h2>
+                    <p class="event-description">After the assassination of President Park Chung-hee in October 1979, General Chun Doo-hwan seized power through a military coup in December 1979. Martial law was extended throughout the country.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 19 1980</p>
+                    <h1 class="event-number">03</h1>
+                    <img src="../assets/img/historique4.jpg" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Escalation of Tensions</h2>
+                    <p class="event-description">In response to military violence, the protests intensified. The number of demonstrators increased to several thousand, including students and ordinary citizens.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 20 1980</p>
+                    <h1 class="event-number">04</h1>
+                    <img src="../assets/img/historique6.jpg" alt="Image 4" class="carousel-image">
+                    <h2 class="event-title">Spread of the Uprising</h2>
+                    <p class="event-description">Protesters began using stones, bottles, and Molotov cocktails against the military forces.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 21 1980</p>
+                    <h1 class="event-number">05</h1>
+                    <img src="../assets/img/historique9.png" alt="Image 5" class="carousel-image">
+                    <h2 class="event-title">Taking Control of the City</h2>
+                    <p class="event-description">Faced with intense resistance, security forces withdrew from several areas of the city. Protesters took control of major buildings and infrastructure.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 22-23 1980</p>
+                    <h1 class="event-number">06</h1>
+                    <img src="../assets/img/historique11.png" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Self-Management and Resistance</h2>
+                    <p class="event-description">The population of Gwangju showed massive support for the protesters, providing food, blood for transfusions, and other forms of aid. Citizen committees continued to manage the city.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 24-25 1980</p>
+                    <h1 class="event-number">07</h1>
+                    <img src="../assets/img/historique14.png" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Negotiation Attempts</h2>
+                    <p class="event-description">Some clergy members, academics, and citizens attempt to negotiate with the military authorities for a peaceful resolution. The protesters demand the abolition of martial law and the release of political prisoners.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 26 1980</p>
+                    <h1 class="event-number">08</h1>
+                    <img src="../assets/img/historique17.jpg" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Preparation for the Final Assault</h2>
+                    <p class="event-description">Chun Doo-hwan's government issues an ultimatum to the protesters, ordering them to surrender before midnight. The protesters refuse, determined to continue their struggle.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">May 27 1980</p>
+                    <h1 class="event-number">09</h1>
+                    <img src="../assets/img/historique18.png" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">Repression and End of the Uprising</h2>
+                    <p class="event-description">In the early hours of May 27, elite troops of the South Korean army launch a major offensive against the protesters' positions. The assault is brutal and swift.</p>
+                </div>
+                <div class="event">
+                    <p class="event-date">After the Uprising</p>
+                    <h1 class="event-number">10</h1>
+                    <img src="../assets/img/historique22.jpg" alt="Image 3" class="carousel-image">
+                    <h2 class="event-title">After the Uprising</h2>
+                    <p class="event-description">The government conducts a severe crackdown on dissidents and anyone suspected of participating in the uprising. Media censorship is intensified to control information about the events in Gwangju.</p>
+                </div>
+            </div>
+            <button class="carousel-button prev"><i class='bx bx-chevron-left bx-lg' style='color:#ffffff'></i></button>
+            <button class="carousel-button next"><i class='bx bx-chevron-right bx-lg' style='color:#ffffff'></i></button>
+            <div class="events-progress">
+                <div class="events-progress-bar">
+                    <span class="events-progress-progression"></span>
+                </div>
+                <ul>
+                    <!-- Dates progress bar -->
+                    <li>The Beginnings</li>
+                    <li>May 18 1980</li>
+                    <li>May 19 1980</li>
+                    <li>May 20 1980</li>
+                    <li>May 21 1980</li>
+                    <li>May 22-23 1980</li>
+                    <li>May 24-25 1980</li>
+                    <li>May 26 1980</li>
+                    <li>May 27 1980</li>
+                    <li>After the Uprising</li>
+                </ul>
+            </div>
+        </div>
+        <div class="descriptions">
+            <!-- =========== -->
+            <div class="description active">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/landingBgImg.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>The Students of Gwangju Organize</h1>
+                            <p>The students of Gwangju organize to protest against these measures and the arrest of Kim Dae-jung, a democratic leader. On May 18, 1980, which marks the first day of the uprising, military forces brutally suppress the protests, triggering a massive reaction from the population. As a result, the residents of Gwangju support the students, amplifying the revolt. These combined factors led to the outbreak of the Gwangju Uprising as we know it today.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>The Beginnings of the Uprising</h1>
+                        <p>Several elements led to the Gwangju Uprising.</p>
+                        <p>Since 1961, South Korea had been under the dictatorship of Park Chung-hee, marked by repression and the suppression of civil liberties. In 1979, Park was assassinated, creating political instability. Subsequently, in December 1979, General Chun Doo-hwan seized power through a military coup. Then, in May 1980, Chun Doo-hwan extended martial law, closed universities, banned gatherings, and arrested opposition leaders.
+                        </p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historical-elements.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+            <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique2.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>In Gwangju, 200 Students Gather to Protest Peacefully</h1>
+                            <p>In response to the closure of Chonnam University, around 200 students gather to protest peacefully against the closure of their university and the arrest of Kim Dae-jung, an influential pro-democracy leader. Special forces (paratroopers from the 7th Division) intervene brutally, using batons and tear gas to disperse the crowd. Many students are beaten and arrested, causing widespread outrage among the residents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Start of the Uprising</h1>
+                        <p>After the assassination of President Park Chung-hee in October 1979, General Chun Doo-hwan seized power through a military coup in December 1979. Martial law was extended throughout the country. Under the extended martial law, political and social tensions were high. General Chun Doo-hwan, having consolidated his power, imposed strict measures, including the closure of universities.
+                        </p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique3.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+            <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique4.jpg" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Escalating Violence</h1>
+                            <p>The clashes between protesters and security forces intensify. Soldiers fire live ammunition, killing and injuring several protesters. The military's violence further galvanizes the protests.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Larger Protests</h1>
+                        <p>In response to the military violence, the protests escalate. The number of protesters grows to several thousand, including students and ordinary citizens. </p>
+                        <p>The slogans call for the end of martial law and the resignation of Chun Doo-hwan.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique5.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+            <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique6.jpg" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Arming the Protesters.</h1>
+                            <p>Protesters manage to seize military vehicles and light weapons, intensifying the resistance. Government buildings and police stations are attacked and set on fire. </p>    
+                            <p>The number of deaths and injuries rises significantly. Hospitals are overwhelmed and lack resources to treat all the wounded.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Violent Clashes</h1>
+                        <p>Protesters begin using stones, bottles, and Molotov cocktails against the military forces. Scenes of violence multiply throughout the city.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique7.jpg" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique9.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Citizen Committees.</h1>
+                            <p>Self-management committees form to organize the city's defense, distribute supplies, and maintain order. Solidarity among the residents is strong.</p> 
+                            <p>Army gunfire kills many protesters, further exacerbating the population's anger.</p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Security Forces' Retreat</h1>
+                        <p>Facing intense resistance, security forces withdraw from several areas of the city. Protesters take control of major buildings and infrastructure.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique10.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique11.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Communication.</h1>
+                            <p>Protesters use local radio stations to broadcast information and call for outside help. However, communications are often jammed by the government.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Popular Support</h1>
+                        <p>The population of Gwangju shows massive support for the protesters, providing food, blood for transfusions, and other forms of aid. Citizen committees continue to manage the city.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique12.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique14.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Maintaining Order</h1>
+                            <p>Despite negotiation attempts, citizen committees continue to manage the city and prepare for defense in case of a new military assault.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Discussions</h1>
+                        <p>Some clergy members, academics, and citizens attempt to negotiate with the military authorities for a peaceful resolution. The protesters demand the abolition of martial law and the release of political prisoners.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique15.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique17.jpg" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Military Preparation</h1>
+                            <p>Military forces regroup around Gwangju, ready to launch a massive attack to retake the city.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Ultimatum</h1>
+                        <p>Chun Doo-hwan's government issues an ultimatum to the protesters, ordering them to surrender by midnight. The protesters refuse, determined to continue their struggle.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique16.jpg" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique18.png" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Numerous Victims</h1>
+                            <p> The toll is heavy: hundreds of protesters are killed or injured. Hundreds more are arrested. There are also reports of rape, sexual assaults, and torture inflicted by the military.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Final Assault</h1>
+                        <p>In the early hours of May 27, elite troops of the South Korean army launch a major offensive against the protesters' positions. The assault is brutal and swift.</p>
+                        <p>The military troops use armored vehicles and heavy weapons. Fierce fighting occurs, but the protesters are quickly overwhelmed by the military's superiority.</p>                    
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique20.png" alt="Image 1">
+                        <img src="../assets/img/historique19.png" alt="Image 2">        
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+             <!-- =========== -->
+            <div class="description">
+                <div class="description-left">
+                    <div class="description-left-box-1">
+                        <img src="../assets/img/historique22.jpg" alt="Image 1" class="left-image-1">
+                        <h2>Title / Caption / Photo Credits</h2>
+                    </div>
+                    <div class="description-left-box2">
+                        <img src="../assets/img/historique.png" alt="">
+                        <div>
+                            <img class="quote-left" src="../assets/img/quote-page-2.svg" alt="">
+                            <h1>Political Consequences</h1>
+                            <p>The Gwangju Uprising becomes a powerful symbol of resistance against authoritarianism in South Korea. In 1987, popular pressure finally leads to democratic reforms. In 1997, President Kim Dae-jung, a former political prisoner, declares May 18 as a national commemoration day.</p>    
+                            <p>The Gwangju Uprising is now commemorated as a key moment in the struggle for democracy and civil rights in South Korea. Despite the heavy toll, it is seen today as a general symbol of hope in the fight for human freedoms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-right">
+                    <div class="description-right-box-1">
+                        <h1>Continued Repression</h1>
+                        <p>The government conducts a severe crackdown on dissidents and anyone suspected of participating in the uprising. Media censorship is intensified to control information about the events in Gwangju.</p>
+                    </div>
+                    <div class="description-right-box-2">
+                        <img src="../assets/img/historique23.jpg" alt="Image 1">
+                        <img src="../assets/img/historique21.jpg" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== -->
+        </div>
+
+
+        <a href="menu.html" title="Main menu"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="../assets/js/historique.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</body>
+</html>

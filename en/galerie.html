@@ -30,9 +30,31 @@
                 <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
             </div>
 
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='coulisses.html'">See behind the scenes</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="../assets/js/burger.js"></script>
+
             <!-- Partie droite -->
             <div class="right-side">
-                <button class="nav-button" onclick="window.location.href='menu.html'">Main  menu</button>
+                <button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button>
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
                 <i class='bx bxs-info-circle' id="menu-modal"></i>
 
                 <!-- affichage de la fenêtre modale -->
@@ -43,14 +65,17 @@
                         <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
                         <li>Alexis <strong>BASTIEN</strong></li>
                         <li>Wassila <strong>BENABDELMOUMENE</strong></li>
-                        <li>Audric <strong>CHAVINY</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
                         <li>Aurélie <strong>CHEA</strong></li>
-                        <li>Kévin <strong>HA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
                         <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
                         <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
                         <li>Léo <strong>PINSON</strong></li>
                         <li>Quentin <strong>THERY</strong></li>
                         <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
                     </ul>
                     <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">See behind the scenes</button>
                 </div>
@@ -80,6 +105,11 @@
                 <img class="galerie-image" src="../assets/img/galerie-10.JPG">
                 <img class="galerie-image" src="../assets/img/galerie-11.JPG">
                 <img class="galerie-image" src="../assets/img/galerie-12.JPG">
+            </div>
+            <div class="galerie-row">
+                <img class="galerie-image" src="../assets/img/galerie-16.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-17.JPG">
+                <img class="galerie-image" src="../assets/img/galerie-18.JPG">
             </div>
             <div class="galerie-row">
                 <img class="galerie-image" src="../assets/img/galerie-13.JPG">

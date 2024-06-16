@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../assets/css/page1.css">
     <link rel="stylesheet" href="../assets/css/page2.css">
     <link rel="stylesheet" href="../assets/css/page3.css">
-    <link rel="stylesheet" href="../assets/css/carousel.css">
     <link rel="stylesheet" href="../assets/css/responsivePage.css">
+    <link rel="stylesheet" href="../assets/css/carousel.css">
     <link rel="icon" href="../assets/img/logo.png">
 
     <!-- Intégration boxicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <title>5⸱18 - Gwangju Uprising</title>
+    <title>5⸱18 Gwangju Uprising</title>
 </head>
 <body>
     <div class="main-content" role="main">
@@ -30,11 +30,33 @@
                 <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
             </div>
 
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button></li>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='coulisses.html'">See behind the scenes</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="../assets/js/burger.js"></script>
+
+
             <!-- Partie droite -->
             <div class="right-side">
-                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Gallery</button>
-                <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
-                <i class='bx bxs-info-circle' id="menu-modal"></i>
+                    <button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button>
+                    <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button>
+                    <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
+                    <i class='bx bxs-info-circle' id="menu-modal"></i>
 
                 <!-- affichage de la fenêtre modale -->
                 <div class="landing-modal-window">
@@ -66,7 +88,7 @@
         </div>
         <div class="first-box-content">
             <div class="text-box-content">
-                <h2 class="title-box">À noter</h2>
+                <h2 class="title-box">Note</h2>
                 <p class="description-box">
                     The Gwangju Uprising is a significant historical event in the struggle for democracy in South Korea. The film "A Taxi Driver," which has become a gateway to learning more, played an important role in popularizing this story among the general public, especially young generations who knew little about this conflict. The film highlights the presence and role of the German journalist Jürgen Hinzpeter, but it also conveys a mystification of his presence, giving the impression that he was the only foreign journalist covering the events.
                 </p>
@@ -140,7 +162,7 @@
              -->
             <button class="page-content-button">Next section</button>
         </div>
-        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
+        <a href="menu.html" title="Main menu"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
     </div>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/carousel.js"></script>
