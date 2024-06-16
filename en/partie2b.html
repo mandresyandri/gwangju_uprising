@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/page1.css">
+    <link rel="stylesheet" href="../assets/css/page2.css">
+    <link rel="stylesheet" href="../assets/css/page3.css">
+    <link rel="stylesheet" href="../assets/css/carousel.css">
+    <link rel="stylesheet" href="../assets/css/responsivePage.css">
+    <link rel="icon" href="../assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Gwangju Uprising</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="../assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Gallery</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">This web documentary was created by</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">See behind the scenes</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">The archivist's job</h1>
+            <!-- <h2 class="page-title-description">Témoignages et devoir de mémoire du soulèvement de Gwangju</h2> -->
+        </div>
+        <div class="first-box-content">
+            <div class="text-box-content">
+                <h2 class="title-box">Focus</h2>
+                <p class="description-box">
+                    During our stay in Gwangju, we had the opportunity to interview an archivist from the May 18 Foundation. This gave us an insight into this little-known profession with someone dedicated to preserving the history of the Gwangju uprising, and enabled us to learn more about the day-to-day work of an archivist.                </div>
+            <div class="img-support-box">
+                <img src="../assets/img/partie2b.PNG">
+                <div class="img-description">1980년 5월 광주에서 <br> May 1980 at Gwangju</div>
+            </div>
+        </div>
+        <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe width="960" height="540" src="https://player.vimeo.com/video/942244324?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+            </iframe>
+        </div>
+
+        <!-- contenu historique -->
+        <div class="img-half-text">
+            <img class="img-content" src="../assets/img/archives.jpeg">
+            <div class="text-content">
+                <h2 class="page-content-title">History</h2>
+                <p class="page-text-content">
+                    The role of an archivist is central to the preservation and transmission of memory. In the case of the Gwangju uprising, the archivist we interviewed is dedicated to collecting, preserving and making available historical documents, eyewitness accounts and photographs of the event. Thanks to the archivist's meticulous work, the public has access to a rich source of information, which remains essential for understanding this part of South Korean history. An archivist's work is not limited to the technical aspect; he or she also plays a key role in educating the public, organizing exhibitions and commemorative events that raise awareness of the importance of remembering the Gwangju uprising.
+                </p>
+                <p class="page-text-content">
+                    To get a better idea of what an archivist does, we asked our interviewee to explain in more detail her day-to-day work and the challenges she faces. Going the extra mile in this profession means not only managing a large volume of historical documents, but also taking into account ethical and moral issues that can sometimes be tricky. For example, how can we preserve the authenticity of documents while respecting the confidentiality of those involved? In addition, new technologies now play a central role in an archivist's work. The digitization of archives, for example, not only preserves physical documents against the wear and tear of time, but also makes these resources accessible to a global audience via online platforms.
+                </p>
+            </div>
+        </div>
+
+       
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
+   
+
+

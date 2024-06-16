@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/page1.css">
+    <link rel="stylesheet" href="assets/css/page2.css">
+    <link rel="stylesheet" href="assets/css/page3.css">
+    <link rel="stylesheet" href="assets/css/responsivePage.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Le soulèvement de Gwangju</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="assets/js/burger.js"></script>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">Voir les coulisses</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">Le travail d’archiviste</h1>
+            <!-- <h2 class="page-title-description">Témoignages et devoir de mémoire du soulèvement de Gwangju</h2> -->
+        </div>
+        <div class="first-box-content">
+            <div class="text-box-content">
+                <h2 class="title-box">Focus</h2>
+                <p class="description-box">
+                    Lors de notre séjour à Gwangju, nous avons eu l’occasion d’interviewer une archiviste de la Fondation du 18 mai. Cela nous a permis de découvrir ce métier méconnu auprès d’une personne dévouée à la préservation de l'histoire du soulèvement de Gwangju et d'en apprendre plus sur le quotidien d’un archiviste. 
+                </div>
+            <div class="img-support-box">
+                <img src="assets/img/partie2b.PNG">
+                <div class="img-description">1980년 5월 광주에서 <br> Mai 1980 à Gwangju</div>
+            </div>
+        </div>
+        <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe width="960" height="540" src="https://player.vimeo.com/video/942244324?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+            </iframe>
+        </div>
+
+        <!-- contenu historique -->
+        <div class="img-half-text">
+            <img class="img-content" src="assets/img/archives.jpeg">
+            <div class="text-content">
+                <h2 class="page-content-title">Histoire</h2>
+                <p class="page-text-content">
+                    Le rôle d'un archiviste est central pour la sauvegarde et la transmission de la mémoire. Concernant le soulèvement de Gwangju, l'archiviste que nous avons interviewée s'attèle à la collecte, la préservation et la mise à disposition de documents historiques, de témoignages et de photographies relatant l’événement. Grâce au travail méticuleux de l’archiviste, le public peut accéder à une riche source d'informations, qui reste essentielle pour comprendre ce pan de l'histoire sud-coréenne. Le travail d’un archiviste ne se limite pas seulement à l'aspect technique ; il joue également un rôle clé dans l'éducation du public, en organisant des expositions et des événements commémoratifs qui sensibilisent la population sur l'importance du travail de mémoire autour du soulèvement de Gwangju.                </p>
+                <p class="page-text-content">
+                    Pour mieux comprendre et les missions d'un archiviste, nous avons demandé à notre interlocutrice de nous expliquer plus en détail son quotidien et les enjeux auxquels elle est confrontée. Aller plus loin dans ce métier signifie non seulement gérer un volume important de documents historiques, mais aussi prendre en compte des questions éthiques et morales qui peuvent être parfois délicates. Par exemple, comment préserver l'authenticité des documents tout en respectant la confidentialité des personnes impliquées? Par ailleurs, les nouvelles technologies jouent à présent un rôle central dans le travail d’un archiviste. La numérisation des archives, par exemple, permet non seulement de préserver les documents physiques contre l'usure du temps, mais aussi de rendre ces ressources accessibles à un public mondial via des plateformes en ligne.
+                </p>
+            </div>
+        </div>
+
+       
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
+   
+
+

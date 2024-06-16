@@ -140,6 +140,14 @@
         font-size: 0.5em;
     }
 
+    .carousel-navigation{
+        width: 120%;
+    }
+
+    .carousel-navigation button{
+        font-size: 4em;
+    }
+
     .quote-right, .quote-left{
         width: 10%;
     }

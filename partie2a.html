@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Partie D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- CSS index -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/page1.css">
+    <link rel="stylesheet" href="assets/css/page2.css">
+    <link rel="stylesheet" href="assets/css/page3.css">
+    <link rel="stylesheet" href="assets/css/responsivePage.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Intégration boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>5⸱18 - Le soulèvement de Gwangju</title>
+</head>
+<body>
+    <div class="main-content" role="main">
+        <nav class="navbar">
+            <!-- Partie gauche -->
+            <div class="left-side">
+                <img src="assets/img/logo.png" alt="Logo du webdocumentaire" width="83.3px" height="99px" onclick="window.location.href='index.html'">
+                <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
+            </div>
+
+            <!-- Menu Burger pour les écrans de téléphone -->
+            <button class="burger-menu-btn">
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+                <span class="burger-menu-icon"></span>
+            </button>
+            <!-- Contenu du Menu Burger -->
+            <div class="burger-menu-overlay">
+                <div class="menu-burger-menu">
+                    <span class="close-btn">&times;</span>
+                    <ul>
+                        <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button></li>
+                        <li><button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button></li>    
+                    </ul>
+                </div>
+            </div>
+            <script src="assets/js/burger.js"></script>
+
+            <!-- Partie droite -->
+            <div class="right-side">
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Galerie</button>
+                <button class="nav-button" onclick="window.location.href='menu.html'">Menu principal</button>
+                <i class='bx bxs-info-circle' id="menu-modal"></i>
+
+                <!-- affichage de la fenêtre modale -->
+                <div class="landing-modal-window">
+                    <i class='bx bxs-x-circle' id="menu-modal-close"></i>
+                    <h2 class="menu-modal-title">Ce webdocumentaire a été réalisé par</h2>
+                    <ul class="menu-modal-list">
+                        <li>Mandresy <strong>ANDRIANTSOANAVALONA</strong></li>
+                        <li>Alexis <strong>BASTIEN</strong></li>
+                        <li>Wassila <strong>BENABDELMOUMENE</strong></li>
+                        <li>Audric <strong>CHAVIGNY</strong></li>
+                        <li>Aurélie <strong>CHEA</strong></li>
+                        <li>Kevin <strong>HA</strong></li>
+                        <li>Hyunji <strong>KWON</strong></li>
+                        <li>Jinyoung <strong>PARK</strong></li>
+                        <li>Keïsha-Faty <strong>PAFADNAM</strong></li>
+                        <li>Léo <strong>PINSON</strong></li>
+                        <li>Quentin <strong>THERY</strong></li>
+                        <li>Ensu <strong>YANG</strong></li>
+                        <li>Hongjae <strong>JANG</strong></li>
+                        <li>Solbin <strong>LEE</strong></li>
+                    </ul>
+                    <button class="menu-modal-button" onclick="window.location.href='coulisses.html'">Voir les coulisses</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-title-page">
+            <h1 class="page-title">La place des images d’archives dans le travail de mémoire</h1>
+            <!-- <h2 class="page-title-description">Témoignages et devoir de mémoire du soulèvement de Gwangju</h2> -->
+        </div>
+        <div class="first-box-content">
+            <div class="text-box-content">
+                <h2 class="title-box">Focus</h2>
+                <p class="description-box">
+                    Les images jouent un rôle central dans la transmission de la mémoire des événements. Cela est également le cas avec le soulèvement de Gwangju. Mais quelle place leur est accordée dans la transmission de cet événement qui fait encore débat dans la société coréenne ?                 </p>
+            </div>
+            <div class="img-support-box">
+                <img src="assets/img/partie2a.PNG">
+                <div class="img-description">1980년 5월 광주에서 <br> Mai 1980 à Gwangju</div>
+            </div>
+        </div>
+        <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe width="960" height="540" src="https://player.vimeo.com/video/942244324?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+            </iframe>
+        </div>
+
+        <!-- contenu historique -->
+        <div class="img-half-text">
+            <img class="img-content" src="assets/img/archiviste.jpeg">
+            <div class="text-content">
+                <h2 class="page-content-title">Histoire</h2>
+                <p class="page-text-content">
+                    L’importance de ces images d’archives ne peut être ignorée car elles jouent un rôle clé sur différents aspects de travail de mémoire auquel s'attèle la Fondation 5•18. Elles sont des preuves visuelles et des témoins du militantisme, des soulèvements et des violences perpétrées à Gwangju. Il resté néanmoins nécessaire de nuancer le propos car ces images, bien que témoins, ne sauraient être complètement objectives car, leur perception des événements peut changer selon le parti pris par le photographe. Même en souhaitant rester objective, elles restent teintées par le ressenti de celui qui les a pris à cet instant T. Il persiste donc une part de subjectivité quant à leur interprétation. Les journalistes ont eu, dès le début du soulèvement, une grande liberté d’aller et venir sur le terrain. Cela a permis de largement documenter les évènements mais c’est une situation qui n’a pas duré dans le temps. 
+                </p>
+                <p class="page-text-content">
+                    En effet, l’accès sans restriction à ces images, qui ont permis de documenter et d’accorder une grande visibilité sur la situation à Gwangju, s’est avéré par la suite problématique pour le gouvernement coréen dont l’autorité était dépeinte comme très répressive. De ce fait, les images sur Gwangju ont longtemps été inaccessibles comme pour empêcher la transmission de la mémoire de cet événement. Cela démontre la place centrale des images dans le travail de transmission de mémoire. Restreindre leur accès revient à refuser de transmettre et sensibiliser sur une partie de l’histoire sud coréenne.                 </p>
+                </p>
+            </div>
+        </div>
+
+        <!-- Aller plus loin -->
+        <div class="page-more-content">
+            <h2 class="page-content-title">Aller plus loin</h2>
+            <p class="page-text-content">
+                Lorsque la restriction autour des images relatant le soulèvement de Gwangju a été levée, il était nécessaire d’entamer un travail d’identification, de collecte et de conservation de celles-ci, afin de les diffuser et sensibiliser sur cet événement. C’est un travail qui est notamment poursuivi au quotidien par la fondation 5•18 fondée en 1994. Elle se base sur la promotion de l’esprit du 18 mai afin de renforcer la démocratie en Corée du Sud et respecter le sacrifice des victimes de Gwangju. Elle dispose d’une large banque d’images d’archives sur le soulèvement pour mener à bien ses missions et document aux mieux les populations. Ces images sont aussi utilisées lors de commémoration officielle lors du « Gwangju Uprising Memorial Day ». Ici, elles sont utilisées pour rappeler l’importance de la lutte pour la démocratie. Bien qu’étant abondamment documenté, le soulèvement de Gwangju divise encore certains en Corée du Sud et une minorité perçoit cet événement comme fantasmé. 
+            </p>
+            
+            <button class="page-content-button">Prochaine section</button>
+        </div>
+        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="assets/img/menu-animation.gif" width="130px" height="130px"></a>
+    </div>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
+   
+
+

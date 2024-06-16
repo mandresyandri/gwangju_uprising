@@ -57,7 +57,7 @@
     }
     .menu-element{
         top: 80%;
-        left: 15%;
+        left: 12%;
     }
     .base-circle{
         border: none;
@@ -80,7 +80,7 @@
         left: 100px;
         right: 0;
         top: 50% !important ;
-        width: 250px;
+        width: 270px !important;
 
     }
 
