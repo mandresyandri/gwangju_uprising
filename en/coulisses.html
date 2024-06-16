@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="../assets/css/page1.css">
     <link rel="stylesheet" href="../assets/css/coulisses.css">
-    <link rel="stylesheet" href="../assets/css/responsivePage.css">
+    <link rel="stylesheet" href="/../assets/css/responsivePage.css">
+    <link rel="stylesheet" href="/../assets/css/responsivePhoto.css">
     <link rel="icon" href="../assets/img/logo.png">
 
     <!-- Intégration boxicon -->
@@ -28,9 +29,30 @@
                 <div class="nav-logo-text" onclick="window.location.href='index.html'">5⸱18 Gwangju Uprising</div>
             </div>
 
+                        <!-- Menu Burger pour les écrans de téléphone -->
+                        <button class="burger-menu-btn">
+                            <span class="burger-menu-icon"></span>
+                            <span class="burger-menu-icon"></span>
+                            <span class="burger-menu-icon"></span>
+                        </button>
+                        <!-- Contenu du Menu Burger -->
+                        <div class="burger-menu-overlay">
+                            <div class="menu-burger-menu">
+                                <span class="close-btn">&times;</span>
+                                <ul>
+                                    <li><button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button></li>
+                                    <li><button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button></li>
+                                    <li><button class="nav-button-galerie" onclick="window.location.href='coulisses.html'">See behind the scenes</button></li>
+                                    <li><button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button></li>    
+                                </ul>
+                            </div>
+                        </div>
+                        <script src="../assets/js/burger.js"></script>
+            
             <!-- Partie droite -->
             <div class="right-side">
-                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Gallery</button>
+                <button class="nav-button-galerie" onclick="window.location.href='historique.html'">History of the uprising</button>
+                <button class="nav-button-galerie" onclick="window.location.href='galerie.html'">Photo gallery</button>
                 <button class="nav-button" onclick="window.location.href='menu.html'">Main menu</button>
                 <i class='bx bxs-info-circle' id="menu-modal"></i>
 
@@ -65,48 +87,80 @@
             <!-- Ligne de polaroïds -->
             <div class="pictures-row">
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse8.jpg">
+                    <div class="img-description">Jeonil Building 245 <br> 05/29/2024 in Gwangju</div>
                 </div>
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse9.jpg">
+                    <div class="img-description">Jeonil Building 245 <br> 05/29/2024 in Gwangju</div>
                 </div>
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
-                </div>
-            </div>
-            <!--  -->
-            <!-- Ligne de polaroïds -->
-            <div class="pictures-row">
-                <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
-                </div>
-                <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
-                </div>
-                <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse12.jpg">
+                    <div class="img-description">Lunch break<br> 05/29/2024 in Gwangju</div>
                 </div>
             </div>
             <!--  -->
             <!-- Ligne de polaroïds -->
             <div class="pictures-row">
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse10.jpg">
+                    <div class="img-description">Jeonil Building 245 <br> 05/29/2024 in Gwangju</div>
                 </div>
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse11.jpg">
+                    <div class="img-description">Jeonil Building 245 <br> 05/29/2024 in Gwangju</div>
                 </div>
                 <div class="img-support-box">
-                    <img src="../assets/img/image-page-1.jpg">
-                    <div class="img-description">로렘 입섬 로렘 입섬 <br> The xx<sup>e</sup>/xx/xxxx in Gwangju</div>
+                    <img src="../assets/img/coulisse15.jpg">
+                    <div class="img-description">Jeonil Building 245 <br> 05/29/2024 in Gwangju</div>
+                </div>
+            </div>
+            <!--  -->
+            <!-- Ligne de polaroïds -->
+            <div class="pictures-row">
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse7.jpg">
+                    <div class="img-description">5.18 Foundation Park <br> 05/30/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse1.jpg">
+                    <div class="img-description">5.18 Foundation <br> 05/30/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse2.jpg">
+                    <div class="img-description">5.18 Foundation <br> 05/30/2024 in Gwangju</div>
+                </div>
+            </div>
+            <!--  -->
+            <!-- Ligne de polaroïds -->
+            <div class="pictures-row">
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse13.jpg">
+                    <div class="img-description">5.18 Foundation <br> 05/30/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse3.jpg">
+                    <div class="img-description">5.18 Foundation <br> 05/30/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse6.jpg">
+                    <div class="img-description">5.18 Foundation <br> 05/30/2024 in Gwangju</div>
+                </div>
+            </div>
+            <!--  -->
+            <!-- Ligne de polaroïds -->
+            <div class="pictures-row">
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse14.jpg">
+                    <div class="img-description">Archives from 5.18 <br> 05/30/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse4.jpg">
+                    <div class="img-description">Archives from 5.18 <br> 05/31/2024 in Gwangju</div>
+                </div>
+                <div class="img-support-box">
+                    <img src="../assets/img/coulisse5.jpg">
+                    <div class="img-description">Archives from 5.18 <br> 05/31/2024 in Gwangju</div>
                 </div>
             </div>
             <!--  -->
@@ -116,17 +170,13 @@
         <div class="page-more-content">
             <h2 class="page-content-title">THANKS</h2>
             <p class="page-text-content">
-                De nombreuses nations ayant traversées des périodes de répressions, trouble politique, guerres civiles, dictatures ou un génocides souhaitent rétablir la vérité. Cette quête de restauration de l’histoire est un premier pas vers l’acceptation, la reconstruction et la réconciliation d’un peuple envers son histoire.
-                En 1983, en Argentine, pour la première fois dans le monde, le chemin vers la guérison est initié. La commission nationale sur la disparition des personnes est mis en place après la dictature militaire pour enquêter sur les disparitions forcées et les violations des droits de l'homme commises pendant cette période.
-                C’est en Afrique du Sud qu’apparaît pour la première fois l’appellation désormais mondiale de la « Commission de la vérité et réconciliation ». Établie en 1995, la CVR cherche a favoriser la réconciliation nationale permettant notamment aux victimes de l’apartheid (un système de ségrégation) de raconter leur histoire.
+                Merci à personne, fallait être là
             </p>
 
             <p class="page-text-content">
-                Une commission de la vérité et réconciliation est composée de plusieurs membre et d’un président. Elle tient de nombreuses audiences où des victimes peuvent témoigner. En plus des dépositions, la commission se base sur les documents officiels afin de rétablir la vérité de manière transparente. 
-                En Corée du sud, cette commission est instaurée le 1er Décembre 2005 comme partie intégrante du gouvernement. Elle cherche notamment a mettre en lumière les multiples violations des droits de l’homme pendant la guerre de Corée, ainsi que les différents régîmes autoritaires qui ont suivi.
             </p>
         </div>
-        <a href="menu.html" title="Menu principal"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
+        <a href="menu.html" title="Main menu"><img class="endpage-gif" src="../assets/img/menu-animation.gif" width="130px" height="130px"></a>
     </div>
     <script src="../assets/js/menu.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
