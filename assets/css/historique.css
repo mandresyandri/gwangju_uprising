@@ -27,11 +27,11 @@ h1, h2 {
 }
 
  /* Sous-lignage du bouton du menu */
-.right-side button:nth-of-type(1) {
+.right-side button:nth-child(1) {
     position: relative; 
 }
 
-.right-side button:nth-of-type(1)::after {
+.right-side button:nth-child(1)::after {
     content: '';
     position: absolute;
     bottom: 8px; 
