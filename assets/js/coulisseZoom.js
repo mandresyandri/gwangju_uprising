@@ -30,6 +30,7 @@ document.querySelectorAll('.img-support-box img').forEach((image) => {
         zoomedImage.style.maxHeight = '80%';
         zoomedImage.style.zIndex = '9999';
         zoomedImage.style.cursor = 'zoom-out';
+        zoomedImage.style.borderRadius = '0';
 
         // Ajouter la copie de l'image à l'overlay
         overlay.appendChild(zoomedImage);
