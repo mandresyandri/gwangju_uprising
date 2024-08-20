@@ -1,4 +1,4 @@
-document.querySelectorAll('.galerie-image').forEach((image) => {
+document.querySelectorAll('.galerie-row img').forEach((image) => {
     image.addEventListener("click", () => {
         // Vérifie si un overlay existe déjà
         if (document.querySelector('.image-overlay')) return;
@@ -23,7 +23,7 @@ document.querySelectorAll('.galerie-image').forEach((image) => {
         zoomedImage.style.position = 'fixed';
         zoomedImage.style.top = '50%';
         zoomedImage.style.left = '50%';
-        zoomedImage.style.transform = 'translate(-50%, -50%) scale(2)';
+        zoomedImage.style.transform = 'translate(-50%, -50%)';
         zoomedImage.style.maxWidth = '80%'; // Pour s'assurer que l'image ne déborde pas
         zoomedImage.style.maxHeight = '80%';
         zoomedImage.style.zIndex = '9999';
@@ -31,6 +31,8 @@ document.querySelectorAll('.galerie-image').forEach((image) => {
 
         // Ajouter la copie de l'image à l'overlay
         overlay.appendChild(zoomedImage);
+
+        zoomedImage.classList.add('zoomedImage');
 
         // Ajouter un gestionnaire pour fermer l'image en cliquant sur l'overlay
         overlay.addEventListener("click", () => {

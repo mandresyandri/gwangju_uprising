@@ -1,20 +1,26 @@
 @media (max-width:1366px){
     .galerie-content{
-        margin-left: 10rem;
-        margin-right: 0;
+        /* margin-left: 10rem;
+        margin-right: 0; */
+        margin: auto;
     }
 }
 
 
 @media (max-width:1024px){
     .galerie-content{
-        margin-left:3rem;
-        margin-right: 0;
+        /* margin-left:3rem;
+        margin-right: 0; */
+        margin: auto;
     }
 
     .galerie-image{
         width: 300px;
         height: 300px;
+    }
+
+    .zoomedImage {
+        transform: translate(-50%, -50%) scale(1.6) !important;
     }
 }
 
@@ -53,5 +59,9 @@
     .galerie-image{
         width:250px;
         height: 250px;
+    }
+
+    .zoomedImage {
+        transform: translate(-50%, -50%) scale(1.2) !important;
     }
 }
