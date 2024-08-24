@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body {
+    font-family: "Onest", sans-serif;
+    overflow-x: hidden;
+}
+
+/* text content element */
+.page-title {
+    color: #8B1202;
+    text-transform: uppercase ;
+}
+
+.page-title-description {
+    color: #030303;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+/* Gestion de l'emplacement */
+.main-title-page {
+    width: 67vw;
+    padding: 5rem 0rem 0rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-box-content {
+    display: flex;
+    flex-direction: row;
+    width: 63vw;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-right: 9rem;
+    margin-top: 4.5rem;
+    /* position */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* inside the box */
+    padding: 2rem 2rem 0 2rem;
+}
+
+.img-support-box {
+    position: relative;
+    top: -5rem;
+    right: 3rem;
+    width: 290px;
+    height: 270px;
+    background-color: #fff;
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1; /* permet à l'élément de réduire sa taille */
+}
+
+.description-box {
+    padding-right: 7rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin:0;
+    margin-bottom: 1rem;
+}
+
+.video-integration {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video-integration iframe {
+    box-sizing: border-box;
+    width: 1024px;
+    height: 576px;
+    border-radius: 20px;
+    border: none;
+}
+
+.img-half-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.img-content {
+    width: 50%;
+    height: 550px;
+}
+
+.text-content {
+    margin: 0;
+    background-color: #D9D9D9;
+    width: 50%;
+    height: 550px;
+}
+
+.text-content > * {
+    padding: 0 5rem 0 5rem; 
+    text-align: justify;
+}
+
+.text-content > h2 {
+    padding-top: 2rem;
+}
+
+.page-more-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FDFDFD;
+    width: 60vw;
+    padding: 3rem;
+    border-radius: 30px;
+    display: block;
+}
+
+.title-box {
+    text-transform: uppercase;
+}
+
+.page-content-button {
+    text-transform: uppercase;
+    background-color: #C6DBF0;
+    color: #030303;
+    border: none;
+    width: 186px;
+    padding: .9rem;
+    border-radius: 20px;
+    display: block;
+    margin-top: 1.4rem;
+    cursor: pointer;
+}
+
+.img-support-box > img {
+    height: 180px;
+    padding: .7rem .7rem 0rem .7rem;
+}
+
+.img-description {
+    padding-top: .9rem;
+}
+
+.btn-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    margin-left: auto;
+}
+
+.endpage-gif {
+    transform: translate(-50%, 0%);
+    margin: 0 50%;
+}
+
