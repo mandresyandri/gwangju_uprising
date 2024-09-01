@@ -89,14 +89,18 @@ body {
 
 .img-content {
     width: 50%;
-    height: 550px;
+    /* height: 550px; */
 }
 
 .text-content {
     margin: 0;
     background-color: #D9D9D9;
     width: 50%;
-    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+    /* height: 550px; */
 }
 
 .text-content > * {
@@ -105,7 +109,7 @@ body {
 }
 
 .text-content > h2 {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .page-more-content {
