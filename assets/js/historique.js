@@ -71,7 +71,88 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', showPrevImage);
 
     updateCarousel();
+
+    events.forEach((event) => {
+        const action = event.dataset.action;
+    
+        switch (action) {
+            case 'first':
+                // Script for the first .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 0;
+                    updateCarousel();
+                    console.log(currentIndex);
+                });
+                break;
+            case 'second':
+                // Script for the second .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 1;
+                    updateCarousel();
+                    console.log(currentIndex);
+                });
+                break;
+            case 'third':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 2;
+                    updateCarousel();
+                    console.log(currentIndex);
+                });
+                break;
+            case 'fourth':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 3;
+                    updateCarousel();
+                    console.log(currentIndex);
+                });
+                break;
+            case 'fifth':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 4;
+                    updateCarousel();
+                    console.log(currentIndex);
+                });
+                break;
+            case 'sixth':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 5;
+                    updateCarousel();
+                });
+                break;
+            case 'seventh':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 6;
+                    updateCarousel();
+                });
+                break;
+            case 'eighth':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 7;
+                    updateCarousel();
+                });
+                break;
+            case 'ninth':
+                // Script for the third .event element
+                event.addEventListener('click', () => {
+                    currentIndex = 8;
+                    updateCarousel();
+                });
+                break;  
+            case 'tenth':
+            // Script for the third .event element
+            event.addEventListener('click', () => {
+                currentIndex = 9;
+                updateCarousel();
+            });
+            break;    
+        }
+    });
 });
 
 
-events.addEventListener('click', showNextImage);

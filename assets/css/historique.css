@@ -79,6 +79,7 @@ h1, h2 {
     filter: blur(0px);
     opacity: .4;
     transition: all .5s ease-in;
+    cursor: pointer;
 }
 
 .event.active {
