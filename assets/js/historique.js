@@ -72,3 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCarousel();
 });
+
+
+events.addEventListener('click', showNextImage);
