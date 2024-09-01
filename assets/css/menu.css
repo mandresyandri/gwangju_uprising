@@ -239,7 +239,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
     opacity: 0;
     display: none;
     transition: opacity .5s ease-in-out;
@@ -254,7 +254,7 @@ body {
     right: 50px;
     cursor: pointer;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .video-integration iframe {
