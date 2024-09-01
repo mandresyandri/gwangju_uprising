@@ -271,6 +271,10 @@ body {
     animation-play-state: paused;
 }
 
+i {
+    cursor: pointer;
+}
+
 @keyframes float {
     0% {
         transform: translateY(0);
