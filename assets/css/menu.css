@@ -280,7 +280,7 @@ i, .point img{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-4px); /* Move up */
+        transform: translateY(-5px); /* Move up */
     }
     100% {
         transform: translateY(0); /* Move back to start */
