@@ -107,4 +107,8 @@
         align-items: center;
         width: 100%;
     }
+
+    .menu-title {
+        margin-bottom: 50px;
+    }
 }
