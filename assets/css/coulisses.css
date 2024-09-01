@@ -73,3 +73,12 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
 }
+
+.donateursTxt {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.donateurs {
+    font-weight: bold;
+}
