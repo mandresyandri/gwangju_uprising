@@ -43,8 +43,12 @@
 
 
 @media (max-width:430px) {
+    body {
+        position: initial;
+    }
+
     .main-content{
-        height: 130vh;
+        height: 140vh;
     }
 
     .menu-help-card{
@@ -81,6 +85,7 @@
         right: 0;
         top: 50% !important ;
         width: 270px !important;
+        text-align: initial !important;
 
     }
 
@@ -94,5 +99,12 @@
 
     .base-circle > img{
         display: none;
+    }
+
+    .video-integration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }

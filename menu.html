@@ -16,6 +16,9 @@
     <!-- Intégration boxicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>5⸱18 - Le soulèvement de Gwangju</title>
+
+    <!-- Vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </head>
 <body>
     <div class="main-content">
@@ -53,6 +56,12 @@
         </div>
         <div class="menu-element">
             <div class="base-circle">
+                <!-- CENTRE DU CERCLE -->
+                <div class="point middle">
+                    <img src="assets/img/menu-middle2.JPG" style="filter:brightness(.9); border: 3px solid white">
+                    <span class="img-title" style="top:-50px; width: 150px; right: -30px; text-align: center;">Voir tout le documentaire</span>
+                </div>
+                <!--  // CENTRE DU CERCLE -->
                 <div class="point top">
                     <img src="assets/img/image-page-1.jpg" style="border: 3px solid white" onclick="window.location.href='introduction.html'">
                     <span class="img-title" style="top:20%; width: 300px; right: -335px">Introduction - Le devoir de mémoire et de vérité</span>
@@ -82,13 +91,22 @@
                     <span class="img-title left-menu">III. B) Importance du soulèvement de Gwangju et défis futurs</span>
                 </div>
                 <div class="point top-left">
-                    <img src="assets/img/park-jin-woo.jpg" style="border: 3px solid white" onclick="window.location.href='bonus.html'">
-                    <span class="img-title left-menu">Bonus - Interviews complètes</span>
+                    <img src="assets/img/menu-conclusion.JPG" style="border: 3px solid white" onclick="window.location.href='conclusion.html'">
+                    <span class="img-title left-menu" style="right: 130px !important; width: fit-content !important;">Conclusion</span>
                 </div>
                 <img src="assets/img/menu-animation.gif" width="317px" height="317px">
             </div>
         </div>
     </div>
+    <div class="full-video-modal">
+                <!-- Intégration de la vidéo -->
+        <!-- mettre rigoureusement une dimension 16/9 -->
+        <div class="video-integration">
+            <iframe src="https://player.vimeo.com/video/1005115395?h=825e0ca2f1&texttrack=fr" width="960" height="540" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe>
+        </div>
+        <span class="modal-quit">X</span>
+    </div>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/fullVideoModal.js"></script>
 </body>
 </html>
