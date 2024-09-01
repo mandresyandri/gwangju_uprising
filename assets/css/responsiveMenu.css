@@ -23,7 +23,8 @@
         left: 53%;
     }
     .main-content{
-        width: 110vw;
+        /* width: 110vw; */
+        width: 100vw;
         height: 110vh;
     }
     .menu-help-card{
@@ -48,7 +49,7 @@
     }
 
     .main-content{
-        height: 140vh;
+        height: 150vh;
     }
 
     .menu-help-card{
