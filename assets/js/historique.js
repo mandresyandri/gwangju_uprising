@@ -81,7 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 0;
                     updateCarousel();
-                    console.log(currentIndex);
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'hidden';
                 });
                 break;
             case 'second':
@@ -89,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 1;
                     updateCarousel();
-                    console.log(currentIndex);
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'third':
@@ -97,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 2;
                     updateCarousel();
-                    console.log(currentIndex);
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'fourth':
@@ -105,7 +108,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 3;
                     updateCarousel();
-                    console.log(currentIndex);
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'fifth':
@@ -113,7 +117,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 4;
                     updateCarousel();
-                    console.log(currentIndex);
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'sixth':
@@ -121,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 5;
                     updateCarousel();
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'seventh':
@@ -128,6 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 6;
                     updateCarousel();
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'eighth':
@@ -135,6 +144,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 7;
                     updateCarousel();
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;
             case 'ninth':
@@ -142,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.addEventListener('click', () => {
                     currentIndex = 8;
                     updateCarousel();
+                    nextButton.style.visibility = 'visible';
+                    prevButton.style.visibility = 'visible';
                 });
                 break;  
             case 'tenth':
@@ -149,6 +162,8 @@ document.addEventListener('DOMContentLoaded', function () {
             event.addEventListener('click', () => {
                 currentIndex = 9;
                 updateCarousel();
+                nextButton.style.visibility = 'hidden';
+                prevButton.style.visibility = 'visible';
             });
             break;    
         }
