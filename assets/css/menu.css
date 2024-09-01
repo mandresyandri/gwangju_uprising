@@ -261,3 +261,24 @@ body {
     border: transparent;
     border-radius: 20px;
 }
+
+.middle {
+    /* Floating animation */
+    animation: float 8s ease-in-out infinite;
+}
+
+.middle:hover {
+    animation-play-state: paused;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move back to start */
+    }
+}
