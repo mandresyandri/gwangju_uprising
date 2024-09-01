@@ -271,7 +271,7 @@ body {
     animation-play-state: paused;
 }
 
-i {
+i, .point img{
     cursor: pointer;
 }
 
@@ -280,7 +280,7 @@ i {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-3px); /* Move up */
+        transform: translateY(-4px); /* Move up */
     }
     100% {
         transform: translateY(0); /* Move back to start */
