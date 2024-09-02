@@ -89,6 +89,7 @@ body {
 
 .img-content {
     width: 50%;
+    object-fit: cover;
     /* height: 550px; */
 }
 
