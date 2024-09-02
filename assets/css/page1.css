@@ -90,6 +90,7 @@ body {
 .img-content {
     width: 50%;
     object-fit: cover;
+    object-position: right;
     /* height: 550px; */
 }
 
