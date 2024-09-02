@@ -105,6 +105,9 @@ body {
 
 .text-content > * {
     padding: 0 5rem 0 5rem; 
+}
+
+.text-content > p {
     text-align: justify;
 }
 
@@ -154,6 +157,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .left{

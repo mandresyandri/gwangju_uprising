@@ -6,7 +6,9 @@
         width: 80vw;
     }
     .main-title-page{
-        margin-left: 8%;
+        /* margin-left: 8%; */
+        padding: 2rem 1rem 0 1rem;
+        box-sizing: border-box;
     }
     .img-support-box{
         top:-2rem;
@@ -48,24 +50,25 @@
     .first-box-content{
         width: 100vw;
         border-radius: 0;
-        padding-right: 0;
+        /* padding-right: 0; */
     }
     .text-box-content{
         width: 65%;
     }
     .main-title-page{
-        margin-left: 3%;
+        /* margin-left: 3%; */
     }
     .img-support-box{
         top: -1rem;
         right: 0rem;
     }
     .description-box{
-        padding-right: 3rem;
+        padding-right: 0;
     }
     .page-more-content{
         width: 100vw;
         border-radius: 0;
+        box-sizing: border-box;
     }
     .page-content-title{
         width: 90%;
@@ -82,16 +85,22 @@
         width: 100vw;
         border-radius: 0;
         margin: 0;
+        box-sizing: border-box;
     }
     .img-half-text > .page-text-content{
         width: 90%;
         text-align: justify;
+        box-sizing: border-box;
     }
 
 
     .first-box-content{
-        display: block;
-        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 3rem;
+        padding-bottom: 20px;
     }
 
     .text-box-content{
@@ -127,7 +136,7 @@
 
     .main-title-page{
         width: 100vw;
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
 
     .video-integration{
@@ -153,11 +162,11 @@
     }
 
     .page-more-content{
-        padding: 0.5rem;
+        padding: 2rem;
     }
 
     .img-half-text > .text-content{
-        padding: 0.5rem;
+        padding: 2rem;
     }
 
     .img-half-text > .img-content{
@@ -168,4 +177,5 @@
         width: 95%;
 
     }
+
 }

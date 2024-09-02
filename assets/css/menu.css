@@ -271,7 +271,7 @@ body {
     animation-play-state: paused;
 }
 
-i, .point img{
+i, .point img, .point span{
     cursor: pointer;
 }
 

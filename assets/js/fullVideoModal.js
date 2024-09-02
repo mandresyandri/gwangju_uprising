@@ -1,19 +1,23 @@
 // récupération des éléments js 
 let openBtnModal = document.querySelector(".middle > img");
+let txtBtnModal = document.querySelector(".middle > span");
 let closeBtnModal = document.querySelector(".modal-quit");
 let modal = document.querySelector(".full-video-modal");
 const iframe = document.querySelector('iframe');
 const player = new Vimeo.Player(iframe);
 
-// ouvrir la modale
-openBtnModal.addEventListener("click", (e) => {
-    // ouverture de la fenêtre modale
+
+// Fonction qui ouvre la modale
+function openModal() {
     modal.style.display = "flex";
     setTimeout(() => {
         modal.style.opacity = "1";
     }, 1);
+}
 
-})
+openBtnModal.addEventListener("click", openModal);
+txtBtnModal.addEventListener("click", openModal);
+
 
 // fermer la modale
 closeBtnModal.addEventListener("click", (e)=> {
