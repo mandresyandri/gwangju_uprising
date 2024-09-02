@@ -32,6 +32,7 @@
 
     .page-content-button{
         margin-right: auto;
+        margin-left: auto;
     }
 
     .img-half-text > .text-content{
@@ -77,6 +78,7 @@
         width: 90%;
         text-align: justify;
     }
+
     .img-half-text{
         width: 100%;
     }

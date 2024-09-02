@@ -1,9 +1,8 @@
 @media (max-width:1366px){
     .galerie-content{
-        /* margin-left: 10rem;
-        margin-right: 0; */
         margin: 0px auto;
-    }
+        padding-bottom: 30px;
+    }   
 
     .galerie-image{
         width: 300px;
@@ -72,6 +71,7 @@
     .galerie-row{
         flex-direction: column;
         height: 750px;
+        align-items: center;
     }
 
     .galerie-image{
